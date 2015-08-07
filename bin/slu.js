@@ -2,6 +2,8 @@
 
 var _ = require('lodash');
 
+process.slu = true;
+
 var app;
 try {
   var package = require(process.cwd() + '/package.json');
@@ -41,7 +43,10 @@ switch (command) {
               app && app.enable('tools');
             }
             exitAfterAction = false;
-            c(app, args);
+            c(app, args, function (err) {
+              if (err) throw err;
+              process.nextTick(process.exit.bind(process))
+            });
             found = true;
           }
         }
