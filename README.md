@@ -10,7 +10,13 @@ $ npm install --save slu
 
 ## Usage
 
-__Coming Soon__
+```sh
+> slu command [argument(s)]
+```
+
+## Commands
+
+- [slu-seed](https://github.com/taoyuan/slu-seed): Database seed module.
 
 ## License
 
