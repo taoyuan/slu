@@ -14,6 +14,24 @@ $ npm install --save slu
 > slu command [argument(s)]
 ```
 
+## built in commands
+
+### `database|db`
+
+loopback database manage command.
+
+1. Update database
+
+```sh
+> slu db update
+```
+
+2. Migrate database
+
+```sh
+> slu db migrate
+```
+
 ## Commands
 
 - [slu-seed](https://github.com/taoyuan/slu-seed): Database seed module.
