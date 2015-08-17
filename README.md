@@ -14,19 +14,19 @@ $ npm install --save slu
 > slu command [argument(s)]
 ```
 
-## built in commands
+## Built-in commands
 
 ### `database|db`
 
 loopback database manage command.
 
-1. Update database
+* Update database
 
 ```sh
 > slu db update
 ```
 
-2. Migrate database
+* Migrate database
 
 ```sh
 > slu db migrate
