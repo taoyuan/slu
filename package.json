@@ -22,26 +22,24 @@
     "data",
     "database"
   ],
-  "devDependencies": {
-    "gulp": "^3.6.0",
-    "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-istanbul": "^0.9.0",
-    "gulp-jscs": "^1.1.0",
-    "gulp-jshint": "^1.5.3",
-    "gulp-mocha": "^2.0.0",
-    "gulp-plumber": "^1.0.0",
-    "gulp-nsp": "^0.4.5",
-    "jshint-stylish": "^1.0.0",
-    "gulp-coveralls": "^0.1.0"
-  },
-  "scripts": {
-    "prepublish": "gulp prepublish",
-    "test": "gulp"
-  },
-  "license": "MIT",
   "dependencies": {
-    "async": "^1.4.0",
+    "async": "^1.5.0",
     "debug": "^2.2.0",
     "lodash": "^3.10.1"
-  }
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jshint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "jshint-stylish": "^2.1.0",
+    "gulp-coveralls": "^0.1.4"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "license": "MIT"
 }
