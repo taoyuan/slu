@@ -1,7 +1,7 @@
 {
   "name": "slu",
   "version": "0.2.0",
-  "description": "A utilities used to helpers to seed data and some thing at StrongLoop.",
+  "description": "An utilities used to helpers to seed data and some thing at StrongLoop.",
   "homepage": "https://github.com/taoyuan/slu",
   "repository": "taoyuan/slu",
   "author": {
@@ -12,7 +12,7 @@
   "bin": {
     "slu": "bin/slu.js"
   },
-  "main": "lib/index.js",
+  "main": "index.js",
   "keywords": [
     "loopback",
     "tools",
@@ -27,19 +27,8 @@
     "debug": "^2.2.0",
     "lodash": "^3.10.1"
   },
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-istanbul": "^0.10.3",
-    "gulp-jscs": "^3.0.2",
-    "gulp-jshint": "^2.0.0",
-    "gulp-mocha": "^2.2.0",
-    "gulp-plumber": "^1.0.1",
-    "jshint-stylish": "^2.1.0",
-    "gulp-coveralls": "^0.1.4"
-  },
   "scripts": {
-    "test": "gulp"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT"
 }

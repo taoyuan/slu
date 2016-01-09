@@ -6,18 +6,24 @@ process.slu = true;
 
 var app;
 try {
-  var package = require(process.cwd() + '/package.json');
-  if (package && !package.main) {
+  var pkg = require(process.cwd() + '/package.json');
+  if (pkg && !pkg.main) {
     console.log('Please fill `main` field in your `package.json` file');
-    process.exit();
+    process.exit(1);
   }
   app = require(process.cwd());
+  // TODO a better way to check app ?
+  if (!app || !app.dataSources) {
+    console.log('Are you running slu in a loopback project?');
+    process.exit(1);
+  }
+
 } catch(e) {
   app = null;
   throw e;
 }
 
-var tools = require('../').tools;
+var tools = require('../lib/tools');
 
 tools = _.assign(tools, app && app.tools);
 
@@ -87,7 +93,7 @@ switch (command) {
     break;
 
   case '--version':
-    console.log(package.version);
+    console.log(pkg.version);
     break;
 }
 
