@@ -1,6 +1,6 @@
 {
   "name": "slu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An utilities used to helpers to seed data and some thing at StrongLoop.",
   "homepage": "https://github.com/taoyuan/slu",
   "repository": "taoyuan/slu",
