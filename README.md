@@ -5,7 +5,7 @@
 ## Install
 
 ```sh
-$ npm install --save slu
+$ npm i slu -g
 ```
 
 ## Usage
