@@ -23,8 +23,8 @@
     "database"
   ],
   "dependencies": {
-    "async": "^2.1.5",
-    "debug": "^2.6.1",
+    "async": "^3.1.0",
+    "debug": "^4.1.1",
     "lodash": "^4.17.4"
   },
   "scripts": {
